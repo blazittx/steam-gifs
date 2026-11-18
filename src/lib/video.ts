@@ -126,9 +126,9 @@ export async function createEditedVideo(
     filters += `crop=${cropString},`;
     outNameSuffix += `-${cropString}`;
   }
-  // The output should be UP TO 616 pixels for Steam, but can be
+  // The output should be UP TO 780 pixels for Steam, but can be
   // smaller if the source would be (after cropping).
-  const scaledWidth = Math.min(widthAfterCrop, 616);
+  const scaledWidth = Math.min(widthAfterCrop, 780);
   filters += `scale=${scaledWidth}:-2`;
   ffmpegArgs.push("-vf", filters);
   if (edits.trim.start !== 0) {

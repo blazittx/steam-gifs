@@ -45,7 +45,7 @@ This app is just a GUI on top of some ffmpeg transformations. Those commands loo
 ```bash
 # Create a down-scaled video.
 # (Note that the -2 means autoscale the width, but round to an even number)
-ffmpeg -y -i source-video.mp4 -vf "scale=616:-2" source-video_steam.mp4
+ffmpeg -y -i source-video.mp4 -vf "scale=780:-2" source-video_steam.mp4
 
 # Create a color palette
 # (You can experiment with different FPS values)
